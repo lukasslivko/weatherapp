@@ -18,7 +18,7 @@ export default function MainTemperaturePanel(props) {
         <div>
           <div>
             {/* render icon of current weather state from open weather api */}
-            <img src={"http://openweathermap.org/img/wn/"+ weatherData.weather[0].icon +".png"} alt="place" />
+            <img src={"https://openweathermap.org/img/wn/"+ weatherData.weather[0].icon +".png"} alt="place" />
           </div>
           <div className="flex w-full justify-center pb-4 font-body font-medium text-lg">
             {weatherData.weather[0].main}

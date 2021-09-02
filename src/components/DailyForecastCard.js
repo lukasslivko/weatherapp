@@ -24,7 +24,7 @@ export default function DailyForecastCard(props) {
       <div className="flex flex-col justify-center w-full h-full">
         <div className="flex justify-center">
           {/* render icon of forecasted weather state from open weather api */}
-          <img src={"http://openweathermap.org/img/wn/"+ dailyForecast.weather[0].icon +".png"} alt="weather" />
+          <img src={"https://openweathermap.org/img/wn/"+ dailyForecast.weather[0].icon +".png"} alt="weather" />
         </div>
         {/* render date */}
         <div className="flex justify-center font-body font-medium">{getFormatedDate(dailyForecast.dt)}</div>
