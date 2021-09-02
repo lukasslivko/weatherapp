@@ -13,7 +13,7 @@ function App() {
   //fetch current weather data for all cities
   useEffect(() => {
     async function getWeatherDataByCity(city){
-      axios.get('http://api.openweathermap.org/data/2.5/weather?q='+city+'&units=metric&appid=b974d3b0abf935ba853c015b90b0f0f2')
+      axios.get('https://api.openweathermap.org/data/2.5/weather?q='+city+'&units=metric&appid=b974d3b0abf935ba853c015b90b0f0f2')
         .then(response => {
           setWeatherData(weatherData => [...weatherData, response.data]);
         });
